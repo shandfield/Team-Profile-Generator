@@ -35,12 +35,12 @@ function createManager(){
     },
     {
         type:"input",
-        name: "officeNumber",
+        name: "officenumber",
         message: "Please type the office number of the employee:",
     }
     //arrow function taking in response
     ]).then(response => {
-        const manager = new Manager (response.name, response.id, response.email, response.officeNumber);
+        const manager = new Manager (response.name, response.id, response.email, response.officenumber);
         //take the new manager and push that to teamMembers array
             teamMembers.push(manager);
             //calling the create team function 
