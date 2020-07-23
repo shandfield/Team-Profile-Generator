@@ -21,7 +21,7 @@ function createManager(){
     {
         type:"input",
         name: "name",
-        message: "Please type in the name of the employee:",
+        message: "Please type in the name of the Manager:",
     },
     {
         type:"input",
@@ -44,41 +44,48 @@ function createManager(){
         //take the new manager and push that to teamMembers array
             teamMembers.push(manager);
             //calling the create team function 
-            createTeam();
+            createTeam(); 
+           
     })
 };
-
-   function createTeam (){
-       inquirer
-        .prompt([
-            {
-                type: "list",
-                name: "role",
-                message: "Please select the role of the employee:",
-                choices:["Engineer", "Intern", "I don't want to add anymore"],
-            },
-        ]).then(response => {
-            switch(response.role){
-                case "Engineer":
-                    createEngineer ();
-                    break;
-                case "Intern":
-                    createIntern ();
-                    break;
-                default: 
-                    buildTeam();
-            }
-        })
-    };
-
+    //original working code below!!
+function createTeam (){
+    inquirer
+     .prompt([
+         {
+             type: "list",
+             name: "role",
+             message: "Please select the role of the employee:",
+             choices:["Engineer", "Intern", "I don't want to add anymore"],
+         },
+     ]).then(response => {
+         switch(response.role){
+            case "Engineer":
+                 createEngineer ();
+                 break;
+            case "Intern":
+                 createIntern ();
+                 break;
+            default: 
+                buildTeam();
+         }
+     })
+ };
+//*original code
 function buildTeam(){
         if(!fs.existsSync(OUTPUT_DIR)){//if the folder is not there, then we are going to create one
             fs.mkdirSync(OUTPUT_DIR);
         }
         fs.writeFileSync(outputPath, render(teamMembers), "utf-8")
+            console.log ("Successfully created your team!");
 };
-    createManager();
+        //*original:
+        createManager();
+        //createTeam();
+        
     //*Do not mess with any code above this line!!
+    //moved this down for testing purposes 
+   
     
     function createEngineer(){
         inquirer
@@ -145,3 +152,4 @@ function buildTeam(){
                             createTeam();
                     });
                 };
+                
