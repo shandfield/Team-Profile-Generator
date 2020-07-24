@@ -1,6 +1,6 @@
 # Team-Profile-Generator
-https://img.shields.io/npm/v/inquirer
-https://img.shields.io/github/languages/top/shandfield/Team-Profile-Generator
+![inquirer](https://img.shields.io/npm/v/inquirer)
+
 
 Description: 
 This project was built via utilizing node.js. It creates a employee rooster starting with a manager, then allowing the user to add additional employees in the engineer and intern roles. The manger role prompts the user utilizing inquirer to gather information regarding the employee's name, ID numbers, emails, office numbers. It also gathers which role of the employee would like to be added to the team, at this time the choices are engineer and intern, as the application prompts at the manager level right away.  
