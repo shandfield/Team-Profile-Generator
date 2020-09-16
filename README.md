@@ -10,7 +10,7 @@ Ensure to run a npm i in your terminal prior to using this application. As there
 
 Usage: 
 In order to utilize this application the user will first need to open their terminal, and ensure that the terminal is linked to this application. Once the user has ensured that it is connected, the user will need to then type into your terminal npm i. This will install the necessary packages to complete this application. Once the packages are installed, type into the terminal node apps.js this command prompts the questions regarding the staff members that the user wants to add. The questions will start with the manager first, and gather the information necessary. It will then prompt a choices selection of adding an engineer, intern or "I do not want to add anyone else". When engineer or intern are selected it will prompt questions directed toward that employee group. At the end of the questions, it will once again ask if the user would like to add to the current list. If the last choice is selected, then it will console log that it has "Successfully created your team!". At this point, the application will save the created team in a newly created output folder, and inside will have the file called team.html. The user can open this document into the browser to view.
-Video Link: https://drive.google.com/file/d/1vVHGysR2Q78DLTxZKJHF1WGmFW55If5j/view
+Video Link: ***need to add one***
 ![2020-07-23 (1)](https://user-images.githubusercontent.com/63683598/88351437-8d7be080-cd13-11ea-9b25-9a35ee37f69c.png)
 ![2020-07-23 (2)](https://user-images.githubusercontent.com/63683598/88351439-92409480-cd13-11ea-915d-fcc72dafe00c.png)
 ![2020-07-23 (3)](https://user-images.githubusercontent.com/63683598/88351441-940a5800-cd13-11ea-8fdb-aab50e5e47da.png)
