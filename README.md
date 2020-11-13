@@ -30,7 +30,7 @@ To run this program locally, fork/clone the repository, and in the terminal:
 ```
 $ cd ../<nameoffile>
 $ npm install
-$ node apps.js
+$ node app.js
 ```
 
 
